@@ -429,10 +429,10 @@ this->_pin = pin; // usado dentro do construtor da classe Led
 
 ##### Vantagens desta Arquitetura
 
-** Manutenibilidade:**  
+**Manutenibilidade:**  
 Se o LED vermelho parar de funcionar, sabemos que o problema está na fiação do pino 12 ou no código dentro da classe `Led` (ou `Semaforo`), e não perdido no meio da lógica do display.
 
-** Reutilização:**  
+**Reutilização:**  
 Se quiséssemos adicionar um segundo semáforo, bastaria criar uma nova instância no `setup()`:
 ```cpp
 meuSemaforoPedestre = new Semaforo(pinX, pinY, ...);
