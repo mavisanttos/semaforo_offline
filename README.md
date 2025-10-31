@@ -50,7 +50,7 @@
 
 ### Passos de Monatgem (Hardware)
 
-- Passo 1: Coloque o Arduino Uno ao lado da protoboard e utilize jumpers Macho-Macho (pretos) para conectar um pino **GND** ao barramento azul da protoboard. Essa linha servirá como "linha negativa" do protótipo.
+- Passo 1: Coloque o Arduino Uno ao lado da protoboard e utilize jumpers Macho-Macho (marrons) para conectar um pino **GND** ao barramento azul da protoboard. Essa linha servirá como "linha negativa" do protótipo.
 
 - Passo 2: Conecte os LEDs (Vermelho, Amarelo e Verde) utilizando jumpers Macho-Fêmea (cada jumper com a respectiva cor do seu LED de ligação). Utilizando a perna longa (Anodo, +), conecte cada um dos LEDs em uma fileira horizontal.
 
@@ -61,11 +61,11 @@
   - Resistor do LED amarelo ➔ pino 11
   - Resistor do LED verde ➔ pino 10
  
-- Passo 5: Utiliza jumpers Macho-Fêmea (pretos) e conecte a perna curta (Catodo, -) de cada LED diretamente à linha azul da protoboard, a qual definimos como GND do sistema.
+- Passo 5: Utiliza jumpers Macho-Fêmea (marrons) e conecte a perna curta (Catodo, -) de cada LED diretamente à linha azul da protoboard, a qual definimos como GND do sistema.
 
 - Passo 6: Conecte o Display LCD utilizando jumpers Macho-Fêmea:
   - VCC ➔ 5V do arduino (jumper vermelho)
-  - GND ➔ barramento azul (jumper preto)
+  - GND ➔ barramento azul (jumper marrom)
   - SDA ➔ pino A4 (jumper amarelo)
   - SCL ➔ pino A5 (jumper roxo)
  
