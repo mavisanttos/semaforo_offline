@@ -554,6 +554,6 @@ Esta seção registra os resultados das avaliações realizadas por outros aluno
 | Avaliador | Nota| Comentários Gerais |
 |------------|------------------|------------------|
 | Marcela Amorim da Costa | 10 | Realizou a montagem física perfeitamente, mostrou o seu funcionamento e fez um tutorial muito bem feito, claro e organizado. Na programação, utilizou POO e incluiu o uso de ponteiros o que mostra um bom domínio e também explicou cada parte de seu código. Vídeo mostrando o funcionamento e a autora mostrando que o protótipo funciona perfeitamente |
-| [Nome do Avaliador 2] | [Nota/Feedback] | [Comentário geral do avaliador 2] |
+| Anne Esther Lins Figueirôa | 10 | Utilizou POO e Ponteiro, além de apresentar uma explicação profunda sobre o uso. Além disso, apresentou as imagens detalhadas do passo a passo de montagem. Vídeo com funcionamento de visor (incrível - entregou a mais no hardware e no software). |
 
 ---
