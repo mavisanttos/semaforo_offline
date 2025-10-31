@@ -22,7 +22,7 @@
 
 &emsp; O vídeo a seguir demonstra a montagem física do protótipo em funcionamento e comprova a autoria do projeto. A temporização de cada fase (6s, 4s, 2s) é validada pelo display.
 
-&emsp; [Link]()
+&emsp; [Link](https://drive.google.com/file/d/1LIS6HN8l3DLJgagEuXqL2zObNQFJV2k1/view?usp=sharing)
 
 ---
 
@@ -42,38 +42,137 @@
 | LED Difuso            | 1           | Verde                           |
 | Resistor              | 3           | 10k Ω (Ohm)                     |
 | Display LCD           | 1           | Módulo I2C                      |
-| Jumper                | x           | Macho-Fêmea                     |
-| Jumper                | x           | Macho-Macho                     |
+| Jumper                | 10           | Macho-Fêmea                     |
+| Jumper                | 4           | Macho-Macho                     |
 | Cabo USB              | 1           | USB-B para USB-A                |
 
 ---
 
-### Passos de Monatgem (Hardware)
+### Passos de Montagem (Hardware)
 
 - Passo 1: Coloque o Arduino Uno ao lado da protoboard e utilize jumpers Macho-Macho (marrons) para conectar um pino **GND** ao barramento azul da protoboard. Essa linha servirá como "linha negativa" do protótipo.
 
+<div align="center">
+<figcaption><strong>Barramento GND</strong></figcaption>
+<br>
+<img src="assets/imagem_1.jpg" width="40%">
+<br>
+</div>
+
+<br>
+
 - Passo 2: Conecte os LEDs (Vermelho, Amarelo e Verde) utilizando jumpers Macho-Fêmea (cada jumper com a respectiva cor do seu LED de ligação). Utilizando a perna longa (Anodo, +), conecte cada um dos LEDs em uma fileira horizontal.
 
+<div align="center">
+<figcaption><strong>Conexão LEDs pelo Anodo</strong></figcaption>
+<br>
+<img src="assets/imagem_2.jpg" width="40%">
+<br>
+</div>
+
+<br>
+
+<div align="center">
+<figcaption><strong>Conexão LEDs pelo Anodo na protoboard</strong></figcaption>
+<br>
+<img src="assets/imagem_3.jpg" width="40%">
+<br>
+</div>
+
+<br>
+
 - Passo 3: Na mesma fileira onde os Anodos estão conectados, conecte um resistor de 10k Ω.
+
+<div align="center">
+<figcaption><strong>Adição de resistores</strong></figcaption>
+<br>
+<img src="assets/imagem_4.jpg" width="40%">
+<br>
+</div>
+
+<br>
 
 - Passo 4: Conecte a outra ponta de cada resistor, utilizando jumpers Macho-Macho (cada jumper com a respectiva cor do seu LED de ligação), aos respectivos pinos de sinais do Arduino:
   - Resistor do LED vermelho ➔ pino 12
   - Resistor do LED amarelo ➔ pino 11
   - Resistor do LED verde ➔ pino 10
+
+<div align="center">
+<figcaption><strong>Conexão LEDs no Arduino através dos resistores</strong></figcaption>
+<br>
+<img src="assets/imagem_5.jpg" width="40%">
+<br>
+</div>
+
+<br>
  
 - Passo 5: Utiliza jumpers Macho-Fêmea (marrons) e conecte a perna curta (Catodo, -) de cada LED diretamente à linha azul da protoboard, a qual definimos como GND do sistema.
+
+<div align="center">
+<figcaption><strong>Conexão LEDs pelo Catodo</strong></figcaption>
+<br>
+<img src="assets/imagem_6.jpg" width="40%">
+<br>
+</div>
+
+<br>
+
+<div align="center">
+<figcaption><strong>Conexão LEDs pelo Catodo na protoboard</strong></figcaption>
+<br>
+<img src="assets/imagem_7.jpg" width="40%">
+<br>
+</div>
+
+<br>
 
 - Passo 6: Conecte o Display LCD utilizando jumpers Macho-Fêmea:
   - VCC ➔ 5V do arduino (jumper laranja)
   - GND ➔ barramento azul (jumper marrom)
   - SDA ➔ pino A4 (jumper branco)
   - SCL ➔ pino A5 (jumper roxo)
+
+<div align="center">
+<figcaption><strong>Conexão Display no Arduino</strong></figcaption>
+<br>
+<img src="assets/imagem_8.jpg" width="40%">
+<br>
+</div>
+
+<br>
  
 - Passo 7: Encaixe os LEDs nos respectivos furos da estrutura de semáforo.
 
+<div align="center">
+<figcaption><strong>LEDs na estrutura</strong></figcaption>
+<br>
+<img src="assets/imagem_9.jpg" width="40%">
+<br>
+</div>
+
+<br>
+
 - Passo 8: Conecte o cabo USB ao Arduino e carregue o código disponível.
 
+<div align="center">
+<figcaption><strong>Conexão Arduino</strong></figcaption>
+<br>
+<img src="assets/imagem_10.jpg" width="40%">
+<br>
+</div>
+
+<br>
+
 - Passo 9: O circuito deve funcionar com os LEDs acendendo na sequência correta e o display deve mostrar as mensagens e a contagem regressiva em sincronia. 
+
+<div align="center">
+<figcaption><strong>Sistema funcionando</strong></figcaption>
+<br>
+<img src="assets/imagem_11.jpg" width="40%">
+<br>
+</div>
+
+<br>
 
 ---
 
@@ -452,9 +551,9 @@ O loop() principal não precisa saber como um estado é mudado; ele apenas confi
 
 Esta seção registra os resultados das avaliações realizadas por outros alunos.
 
-| Avaliador | Montagem Física | Lógica do Código | Temporização (Vídeo) | Comentários Gerais |
-|------------|------------------|------------------|------------------------|--------------------|
-| [Nome do Avaliador 1] | [Nota/Feedback] | [Nota/Feedback] | [Nota/Feedback] | [Comentário geral do avaliador 1] |
-| [Nome do Avaliador 2] | [Nota/Feedback] | [Nota/Feedback] | [Nota/Feedback] | [Comentário geral do avaliador 2] |
+| Avaliador | Nota| Comentários Gerais |
+|------------|------------------|------------------|
+| Marcela Amorim da Costa | 10 | Realizou a montagem física perfeitamente, mostrou o seu funcionamento e fez um tutorial muito bem feito, claro e organizado. Na programação, utilizou POO e incluiu o uso de ponteiros o que mostra um bom domínio e também explicou cada parte de seu código. Vídeo mostrando o funcionamento e a autora mostrando que o protótipo funciona perfeitamente |
+| [Nome do Avaliador 2] | [Nota/Feedback] | [Comentário geral do avaliador 2] |
 
 ---
