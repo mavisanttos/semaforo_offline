@@ -13,8 +13,8 @@
 
 &emsp; O sistema segue a seguinte lógica de temporização:
 - 6 segundos na luz vermelha
-- 2 segundos na luz amarela
 - 4 segundos na luz verde
+- 2 segundos na luz amarela
 
 ---
 
