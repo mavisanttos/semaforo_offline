@@ -66,7 +66,7 @@
 - Passo 6: Conecte o Display LCD utilizando jumpers Macho-Fêmea:
   - VCC ➔ 5V do arduino (jumper laranja)
   - GND ➔ barramento azul (jumper marrom)
-  - SDA ➔ pino A4 (jumper brancvo)
+  - SDA ➔ pino A4 (jumper branco)
   - SCL ➔ pino A5 (jumper roxo)
  
 - Passo 7: Encaixe os LEDs nos respectivos furos da estrutura de semáforo.
