@@ -50,29 +50,30 @@
 
 ### Passos de Monatgem (Hardware)
 
-- Passo 1: Posicione os três LEDs (Vermelho, Amarelo, Verde) no modelo de semáforo, mantendo a ordem vertical correta.
+- Passo 1: Coloque o Arduino Uno ao lado da protoboard e utilize jumpers Macho-Macho (pretos) para conectar um pino **GND** ao barramento azul da protoboard. Essa linha servirá como "linha negativa" do protótipo.
 
-- Passo 2: Conexão 
+- Passo 2: Conecte os LEDs (Vermelho, Amarelo e Verde) utilizando jumpers Macho-Fêmea (cada jumper com a respectiva cor do seu LED de ligação). Utilizando a perna longa (Anodo, +), conecte cada um dos LEDs em uma fileira horizontal.
 
----
+- Passo 3: Na mesma fileira onde os Anodos estão conectados, conecte um resistor de 10k Ω.
 
-### 🔌 Justificativa das Conexões
+- Passo 4: Conecte a outra ponta de cada resistor, utilizando jumpers Macho-Macho (cada jumper com a respectiva cor do seu LED de ligação), aos respectivos pinos de sinais do Arduino:
+  - Resistor do LED vermelho ➔ pino 12
+  - Resistor do LED amarelo ➔ pino 11
+  - Resistor do LED verde ➔ pino 10
+ 
+- Passo 5: Utiliza jumpers Macho-Fêmea (pretos) e conecte a perna curta (Catodo, -) de cada LED diretamente à linha azul da protoboard, a qual definimos como GND do sistema.
 
-- **LEDs (Diodo Emissor de Luz):**  
-  Cada LED possui duas pernas:  
-  - **Anodo (Perna longa):** lado positivo (+), conectado ao pino digital do Arduino.  
-  - **Catodo (Perna curta):** lado negativo (-), conectado ao **GND**.
+- Passo 6: Conecte o Display LCD utilizando jumpers Macho-Fêmea:
+  - VCC ➔ 5V do arduino (jumper vermelho)
+  - GND ➔ barramento azul (jumper preto)
+  - SDA ➔ pino A4 (jumper amarelo)
+  - SCL ➔ pino A5 (jumper roxo)
+ 
+- Passo 7: Encaixe os LEDs nos respectivos furos da estrutura de semáforo.
 
-- **Resistores (220 Ω):**  
-  Limitam a corrente elétrica que flui dos pinos de 5V, protegendo os LEDs contra sobrecorrente.
+- Passo 8: Conecte o cabo USB ao Arduino e carregue o código disponível.
 
-- **Pinos Digitais (10, 11, 12):**  
-  Configurados como **OUTPUT**.  
-  - `HIGH` → LED acende  
-  - `LOW` → LED apaga
-
-- **GND (Terra):**  
-  Serve como referência “zero” do circuito, conectando o catodo de todos os LEDs.
+- Passo 9: O circuito deve funcionar com os LEDs acendendo na sequência correta e o display deve mostrar as mensagens e a contagem regressiva em sincronia. 
 
 ---
 
